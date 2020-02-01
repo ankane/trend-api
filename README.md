@@ -6,19 +6,20 @@ An anomaly detection and forecasting API. Get started quickly with state-of-the-
 
 ### Docker
 
-Build the Docker image
+An image is available on [Docker Hub](https://hub.docker.com/r/ankane/trend/). Run:
 
 ```sh
-docker build -t trend .
-```
-
-And start the server
-
-```sh
-docker run -ti -p=8000:8000 trend
+docker run -ti -p=8000:8000 ankane/trend
 ```
 
 ### Non-Docker
+
+Download the latest code
+
+```sh
+git clone https://github.com/ankane/trend-api.git
+cd trend-api
+```
 
 Install [Jetpack](https://github.com/ankane/jetpack). Then open an R console and run:
 
