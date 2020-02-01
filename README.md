@@ -21,10 +21,10 @@ git clone https://github.com/ankane/trend-api.git
 cd trend-api
 ```
 
-Install [Jetpack](https://github.com/ankane/jetpack). Then open an R console and run:
+Install [Jetpack](https://github.com/ankane/jetpack) and run:
 
-```r
-jetpack::install()
+```sh
+Rscript -e 'jetpack::install()'
 ```
 
 And start the server
