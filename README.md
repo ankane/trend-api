@@ -4,16 +4,32 @@ An anomaly detection and forecasting API. Get started quickly with state-of-the-
 
 ## Installation
 
+### Docker
+
 Build the Docker image
 
 ```sh
 docker build -t trend .
 ```
 
-Start the server
+And start the server
 
 ```sh
 docker run -ti -p=8000:8000 trend
+```
+
+### Non-Docker
+
+Install [Jetpack](https://github.com/ankane/jetpack). Then open an R console and run:
+
+```r
+jetpack::install()
+```
+
+And start the server
+
+```sh
+Rscript server.R
 ```
 
 ## Anomaly Detection
