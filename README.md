@@ -130,8 +130,8 @@ The API uses HTTP status codes to indicate errors.
 
 Code | Description
 --- | ---
-400 | There’s an issue with the request parameters.
-500 | There’s an issue with with the server.
+400 | There’s an issue with the request parameters
+500 | There’s an issue with the server
 
 
 The body will contain details about the specific error.
