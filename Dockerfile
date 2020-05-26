@@ -1,4 +1,4 @@
-FROM r-base
+FROM r-base:4.0.0
 
 MAINTAINER Andrew Kane <andrew@chartkick.com>
 
