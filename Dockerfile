@@ -3,7 +3,7 @@ FROM r-base:4.1.1
 MAINTAINER Andrew Kane <andrew@ankane.org>
 
 RUN apt-get update && apt-get install -qq -y --no-install-recommends \
-  libxml2-dev libssl-dev libcurl4-openssl-dev libssh2-1-dev
+  libxml2-dev libssl-dev libcurl4-openssl-dev libsodium-dev libssh2-1-dev
 
 RUN mkdir -p /app
 WORKDIR /app
