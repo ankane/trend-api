@@ -15,7 +15,7 @@ function(req){
 #* Anomaly detection
 #* @serializer unboxedJSON
 #* @post /anomalies
-function(res, series, frequency){
+function(res, series=NULL, frequency=NULL){
   r <- prepareSeries(series, frequency)
   anomalies <- list()
   if (!r$bad) {
@@ -37,7 +37,7 @@ function(res, series, frequency){
 #* Forecast
 #* @serializer unboxedJSON
 #* @post /forecast
-function(res, series, frequency, count=10){
+function(res, series=NULL, frequency=NULL, count=10){
   r <- prepareSeries(series, frequency)
   ts <- r$ts
 
@@ -65,7 +65,7 @@ function(res, series, frequency, count=10){
 #* Correlation
 #* @serializer unboxedJSON
 #* @post /correlation
-function(res, series, series2, frequency){
+function(res, series=NULL, series2=NULL, frequency=NULL){
   r <- prepareSeries(series, frequency)
   r2 <- prepareSeries(series2, r$frequency, name="series2")
 
