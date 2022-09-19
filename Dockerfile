@@ -1,4 +1,4 @@
-FROM r-base:4.1.1
+FROM r-base:4.2.1
 
 MAINTAINER Andrew Kane <andrew@ankane.org>
 
