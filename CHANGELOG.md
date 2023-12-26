@@ -1,4 +1,4 @@
-## 0.1.2 (unreleased)
+## 0.1.2 (2023-12-26)
 
 - Updated packages and R version
 
