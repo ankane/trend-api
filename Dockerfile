@@ -1,6 +1,6 @@
 FROM r-base:4.3.2
 
-MAINTAINER Andrew Kane <andrew@ankane.org>
+LABEL org.opencontainers.image.authors="Andrew Kane <andrew@ankane.org>"
 
 RUN apt-get update && apt-get install -qq -y --no-install-recommends \
   libxml2-dev libssl-dev libcurl4-openssl-dev libsodium-dev libssh2-1-dev
@@ -13,4 +13,4 @@ RUN Rscript init.R
 
 COPY . .
 
-CMD Rscript server.R
+CMD ["Rscript", "server.R"]
