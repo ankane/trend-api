@@ -168,7 +168,7 @@ Here’s an example with jQuery:
 ```js
 var series = {}, i, date, data;
 for (i = 1; i < 30; i++) {
-  date = new Date(2018, 3, i);
+  date = new Date(2025, 1, i);
   series[date.toISOString()] = date.getDay();
 }
 data = {series: series};
