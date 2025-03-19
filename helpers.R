@@ -1,4 +1,4 @@
-prepareSeries <- function(series, frequency, name="series"){
+prepareSeries <- function(series, frequency, name="series") {
   if (is.null(series)) {
     stop(paste("[400] Missing parameter:", name))
   }
@@ -23,12 +23,12 @@ prepareSeries <- function(series, frequency, name="series"){
     stop(paste("[400] Missing parameter:", name))
   })
 
-  if(any(duplicated(ds)) || any(sapply(ds, is.na))) {
+  if (any(duplicated(ds)) || any(sapply(ds, is.na))) {
     stop(paste("[400] Missing parameter:", name))
   }
 
   data <- data.frame(ds=ds, y=y)
-  data <- data[order(data$ds),]
+  data <- data[order(data$ds), ]
 
   interval <- get_interval(data$ds)
 
