@@ -170,9 +170,13 @@ for (i = 1; i < 30; i++) {
 }
 data = {series: series};
 
-$.post("https://trendapi.org/forecast", data, function(resp) {
-  console.log(resp);
-}, "json");
+$.post({
+  url: "http://localhost:8000/forecast",
+  data: JSON.stringify(data),
+  dataType: "json",
+  contentType: "application/json",
+  success: function(resp) { console.log(resp); }
+});
 ```
 
 ## Credits
