@@ -45,7 +45,6 @@ The current version uses STL with [multiple seasonal components](https://otexts.
 
 ```http
 POST /anomalies HTTP/1.1
-Host: trendapi.org
 Content-Type: application/json
 
 {
@@ -81,7 +80,6 @@ The current version uses [TBATS](https://robjhyndman.com/papers/ComplexSeasonali
 
 ```http
 POST /forecast HTTP/1.1
-Host: trendapi.org
 Content-Type: application/json
 
 {
@@ -116,7 +114,6 @@ The current version uses [normalized cross correlation](https://en.wikipedia.org
 
 ```http
 POST /correlation HTTP/1.1
-Host: trendapi.org
 Content-Type: application/json
 
 {
