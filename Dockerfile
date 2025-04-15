@@ -1,4 +1,4 @@
-FROM r-base:4.4.3
+FROM r-base:4.3.2
 
 LABEL org.opencontainers.image.authors="Andrew Kane <andrew@ankane.org>"
 
