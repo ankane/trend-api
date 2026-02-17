@@ -1,3 +1,7 @@
+## 0.1.3 (unreleased)
+
+- Updated packages and R version
+
 ## 0.1.2 (2023-12-26)
 
 - Added Docker image for `linux/arm64`
